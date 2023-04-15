@@ -19,3 +19,13 @@ Run `npx nx connect-to-nx-cloud` to enable [remote caching](https://nx.app) and 
 ## Further help
 
 Visit the [Nx Documentation](https://nx.dev) to learn more.
+
+## Commands
+
+Run `nx serve admin` to run admin app
+
+
+Run `npx nx g @nrwl/angular:lib {name}` to generate new library
+Run `npx nx g @nrwl/angular:component {name} --project={libName} --export` to generate new library
+Run `npx nx g @nrwl/angular:lib {name}` to generate new library
+Run `npx nx g @nrwl/angular:lib {name}` to generate new library
