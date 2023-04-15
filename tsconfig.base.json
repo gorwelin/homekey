@@ -14,7 +14,16 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@homekey/common-ui": ["libs/common-ui/src/index.ts"],
+      "@homekey/products": ["libs/products/src/index.ts"],
+      "@homekey/property": ["libs/property/src/index.ts"],
+      "@homekey/shared": ["libs/shared/src/index.ts"],
+      "@homekey/shared/property": ["libs/shared/property/src/index.ts"],
+      "@homekey/shared/src/lib/property": [
+        "libs/shared/src/lib/property/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
