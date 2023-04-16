@@ -1,1 +1,11 @@
-<homekey-nx-welcome></homekey-nx-welcome> <router-outlet></router-outlet>
+<ng-container>
+  <div class="wrapper">
+    <hk-top-nav></hk-top-nav>
+    <div class="content">
+      <main class="content-main" id="content-main" #mainContent >
+        <hk-loader></hk-loader>
+        <router-outlet></router-outlet>
+      </main>
+    </div>
+  </div>
+</ng-container>
