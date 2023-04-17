@@ -1,6 +1,8 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "strictPropertyInitialization": false,
+    "strictNullChecks": false,
     "rootDir": ".",
     "sourceMap": true,
     "declaration": false,
@@ -22,7 +24,9 @@
       "@homekey/shared/property": ["libs/shared/property/src/index.ts"],
       "@homekey/shared/src/lib/property": [
         "libs/shared/src/lib/property/src/index.ts"
-      ]
+      ],
+      "@homekey/top-nav": ["libs/top-nav/src/index.ts"],
+      "@homekey/utils": ["libs/utils/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
