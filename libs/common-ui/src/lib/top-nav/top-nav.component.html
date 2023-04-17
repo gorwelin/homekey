@@ -1,0 +1,16 @@
+<header class="nav-wrapper">
+  <span class="logo-wrapper">Test</span>
+  <nav class="nav" #desktop>
+    <ul class="nav-wrapper-ul">
+      <li *ngFor="let navItem of navItems" class="nav-item">
+        <a
+        routerLink="{{ navItem.link }}"
+        routerLinkActive="active"
+        class="nav-item-link">
+          <homekey-nav-item [navItemConfig]="navItem"></homekey-nav-item>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
