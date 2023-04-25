@@ -8,15 +8,15 @@ import { PropertyService } from '@homekey/shared/src/lib/property';
 import { IconLoaderModule, UtilsModule } from '@homekey/utils';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { appRoutes } from './app.routes';
-import { NxWelcomeComponent } from './nx-welcome.component';
 import { MatTableModule } from '@angular/material/table';
 
+import { NgxPermissionsModule } from 'ngx-permissions';
+
 @NgModule({
-  declarations: [AppComponent, NxWelcomeComponent],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes, { initialNavigation: 'enabledBlocking' }),
+    NgxPermissionsModule.forRoot(),
     CommonUiModule,
     SharedModule,
     AppRoutingModule,
